@@ -22,7 +22,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Alphaleonis.Win32.Network
+namespace System.Native.IO.Network
 {
    /// <summary>A set of bit flags that describe the state of the DFS root or link;
    /// <para>the state of the DFS namespace root cannot be changed.</para>

@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Used by CopyFileXxx and MoveFileXxx. The reason that <see cref="CopyMoveProgressRoutine"/> was called.</summary>
    public enum CopyMoveProgressCallbackReason

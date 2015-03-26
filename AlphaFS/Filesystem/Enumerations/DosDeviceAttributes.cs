@@ -20,7 +20,7 @@
  */
 using System;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Defines the controllable aspects of the Volume.DefineDosDevice() method.</summary>
    [Flags]

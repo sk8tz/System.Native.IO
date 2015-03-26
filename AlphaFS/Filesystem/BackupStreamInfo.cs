@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>The <see cref="BackupStreamInfo"/> structure contains stream header data.</summary>
    /// <seealso cref="BackupFileStream"/>

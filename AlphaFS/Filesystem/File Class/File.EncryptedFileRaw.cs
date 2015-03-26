@@ -25,7 +25,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    public static partial class File
    {
@@ -39,12 +39,12 @@ namespace Alphaleonis.Win32.Filesystem
       ///   </para>
       ///   <para>
       ///      If the caller does not have access to the key for the file, the caller needs
-      ///      <see cref="Alphaleonis.Win32.Security.Privilege.Backup"/> to export encrypted files. See
-      ///      <see cref="Alphaleonis.Win32.Security.PrivilegeEnabler"/>.
+      ///      <see cref="System.Native.IO.Security.Privilege.Backup"/> to export encrypted files. See
+      ///      <see cref="System.Native.IO.Security.PrivilegeEnabler"/>.
       ///   </para>
       ///   <para>
       ///      To backup an encrypted file call one of the
-      ///      <see cref="O:Alphaleonis.Win32.Filesystem.File.ExportEncryptedFileRaw"/> overloads and specify the file to backup
+      ///      <see cref="O:System.Native.IO.FileSystem.File.ExportEncryptedFileRaw"/> overloads and specify the file to backup
       ///      along with the destination stream of the backup data.
       ///   </para>
       ///   <para>
@@ -54,7 +54,7 @@ namespace Alphaleonis.Win32.Filesystem
       /// </remarks>
       /// <param name="fileName">The name of the file to be backed up.</param>
       /// <param name="output">The destination stream to which the backup data will be written.</param>
-      /// <seealso cref="O:Alphaleonis.Win32.Filesystem.File.ImportEncryptedFileRaw"/>      
+      /// <seealso cref="O:System.Native.IO.FileSystem.File.ImportEncryptedFileRaw"/>      
       public static void ExportEncryptedFileRaw(string fileName, System.IO.Stream output)
       {
          ExportEncryptedFileRaw(fileName, output, PathFormat.RelativePath);
@@ -70,12 +70,12 @@ namespace Alphaleonis.Win32.Filesystem
       ///   </para>
       ///   <para>
       ///      If the caller does not have access to the key for the file, the caller needs
-      ///      <see cref="Alphaleonis.Win32.Security.Privilege.Backup"/> to export encrypted files. See
-      ///      <see cref="Alphaleonis.Win32.Security.PrivilegeEnabler"/>.
+      ///      <see cref="System.Native.IO.Security.Privilege.Backup"/> to export encrypted files. See
+      ///      <see cref="System.Native.IO.Security.PrivilegeEnabler"/>.
       ///   </para>
       ///   <para>
       ///      To backup an encrypted file call one of the
-      ///      <see cref="O:Alphaleonis.Win32.Filesystem.File.ExportEncryptedFileRaw"/> overloads and specify the file to backup
+      ///      <see cref="O:System.Native.IO.FileSystem.File.ExportEncryptedFileRaw"/> overloads and specify the file to backup
       ///      along with the destination stream of the backup data.
       ///   </para>
       ///   <para>
@@ -86,7 +86,7 @@ namespace Alphaleonis.Win32.Filesystem
       /// <param name="fileName">The name of the file to be backed up.</param>
       /// <param name="output">The destination stream to which the backup data will be written.</param>
       /// <param name="pathFormat">The path format of the <paramref name="fileName"/> parameter.</param>
-      /// <seealso cref="O:Alphaleonis.Win32.Filesystem.File.ImportEncryptedFileRaw"/>
+      /// <seealso cref="O:System.Native.IO.FileSystem.File.ImportEncryptedFileRaw"/>
       public static void ExportEncryptedFileRaw(string fileName, System.IO.Stream output, PathFormat pathFormat)
       {
          string lpPath = Path.GetExtendedLengthPathCore(null, fileName, pathFormat, GetFullPathOptions.FullCheck | GetFullPathOptions.TrimEnd);
@@ -130,12 +130,12 @@ namespace Alphaleonis.Win32.Filesystem
       /// <remarks>
       ///   <para>
       ///     If the caller does not have access to the key for the file, the caller needs
-      ///     <see cref="Alphaleonis.Win32.Security.Privilege.Backup"/> to restore encrypted files. See
-      ///     <see cref="Alphaleonis.Win32.Security.PrivilegeEnabler"/>.
+      ///     <see cref="System.Native.IO.Security.Privilege.Backup"/> to restore encrypted files. See
+      ///     <see cref="System.Native.IO.Security.PrivilegeEnabler"/>.
       ///   </para>
       ///   <para>
       ///     To restore an encrypted file call one of the
-      ///     <see cref="O:Alphaleonis.Win32.Filesystem.File.ImportEncryptedFileRaw"/> overloads and specify the file to restore
+      ///     <see cref="O:System.Native.IO.FileSystem.File.ImportEncryptedFileRaw"/> overloads and specify the file to restore
       ///     along with the destination stream of the restored data.
       ///   </para>
       ///   <para>
@@ -145,7 +145,7 @@ namespace Alphaleonis.Win32.Filesystem
       /// </remarks>
       /// <param name="stream">The stream to read previously backed up data from.</param>
       /// <param name="destinationFilePath">The path of the destination file to restore to.</param>
-      /// <seealso cref="O:Alphaleonis.Win32.Filesystem.File.ExportEncryptedFileRaw"/>
+      /// <seealso cref="O:System.Native.IO.FileSystem.File.ExportEncryptedFileRaw"/>
       public static void ImportEncryptedFileRaw(System.IO.Stream stream, string destinationFilePath)
       {
          ImportEncryptedFileRaw(stream, destinationFilePath, PathFormat.RelativePath);
@@ -158,12 +158,12 @@ namespace Alphaleonis.Win32.Filesystem
       /// <remarks>
       ///   <para>
       ///     If the caller does not have access to the key for the file, the caller needs
-      ///     <see cref="Alphaleonis.Win32.Security.Privilege.Backup"/> to restore encrypted files. See
-      ///     <see cref="Alphaleonis.Win32.Security.PrivilegeEnabler"/>.
+      ///     <see cref="System.Native.IO.Security.Privilege.Backup"/> to restore encrypted files. See
+      ///     <see cref="System.Native.IO.Security.PrivilegeEnabler"/>.
       ///   </para>
       ///   <para>
       ///     To restore an encrypted file call one of the
-      ///     <see cref="O:Alphaleonis.Win32.Filesystem.File.ImportEncryptedFileRaw"/> overloads and specify the file to restore
+      ///     <see cref="O:System.Native.IO.FileSystem.File.ImportEncryptedFileRaw"/> overloads and specify the file to restore
       ///     along with the destination stream of the restored data.
       ///   </para>
       ///   <para>
@@ -174,7 +174,7 @@ namespace Alphaleonis.Win32.Filesystem
       /// <param name="inputStream">The stream to read previously backed up data from.</param>
       /// <param name="destinationFilePath">The path of the destination file to restore to.</param>
       /// <param name="pathFormat">The path format of the <paramref name="destinationFilePath"/> parameter.</param>
-      /// <seealso cref="O:Alphaleonis.Win32.Filesystem.File.ExportEncryptedFileRaw"/>
+      /// <seealso cref="O:System.Native.IO.FileSystem.File.ExportEncryptedFileRaw"/>
       public static void ImportEncryptedFileRaw(System.IO.Stream inputStream, string destinationFilePath, PathFormat pathFormat)
       {
          ImportEncryptedFileRaw(inputStream, destinationFilePath, false, pathFormat);
@@ -187,12 +187,12 @@ namespace Alphaleonis.Win32.Filesystem
       /// <remarks>
       ///   <para>
       ///     If the caller does not have access to the key for the file, the caller needs
-      ///     <see cref="Alphaleonis.Win32.Security.Privilege.Backup"/> to restore encrypted files. See
-      ///     <see cref="Alphaleonis.Win32.Security.PrivilegeEnabler"/>.
+      ///     <see cref="System.Native.IO.Security.Privilege.Backup"/> to restore encrypted files. See
+      ///     <see cref="System.Native.IO.Security.PrivilegeEnabler"/>.
       ///   </para>
       ///   <para>
       ///     To restore an encrypted file call one of the
-      ///     <see cref="O:Alphaleonis.Win32.Filesystem.File.ImportEncryptedFileRaw"/> overloads and specify the file to restore
+      ///     <see cref="O:System.Native.IO.FileSystem.File.ImportEncryptedFileRaw"/> overloads and specify the file to restore
       ///     along with the destination stream of the restored data.
       ///   </para>
       ///   <para>
@@ -203,7 +203,7 @@ namespace Alphaleonis.Win32.Filesystem
       /// <param name="inputStream">The stream to read previously backed up data from.</param>
       /// <param name="destinationFilePath">The path of the destination file to restore to.</param>
       /// <param name="overwriteHidden">If set to <see langword="true"/> a hidden file will be overwritten on import.</param>
-      /// <seealso cref="O:Alphaleonis.Win32.Filesystem.File.ExportEncryptedFileRaw"/>
+      /// <seealso cref="O:System.Native.IO.FileSystem.File.ExportEncryptedFileRaw"/>
       public static void ImportEncryptedFileRaw(System.IO.Stream inputStream, string destinationFilePath, bool overwriteHidden)
       {
          ImportEncryptedFileRaw(inputStream, destinationFilePath, overwriteHidden, PathFormat.RelativePath);
@@ -216,12 +216,12 @@ namespace Alphaleonis.Win32.Filesystem
       /// <remarks>
       ///   <para>
       ///     If the caller does not have access to the key for the file, the caller needs
-      ///     <see cref="Alphaleonis.Win32.Security.Privilege.Backup"/> to restore encrypted files. See
-      ///     <see cref="Alphaleonis.Win32.Security.PrivilegeEnabler"/>.
+      ///     <see cref="System.Native.IO.Security.Privilege.Backup"/> to restore encrypted files. See
+      ///     <see cref="System.Native.IO.Security.PrivilegeEnabler"/>.
       ///   </para>
       ///   <para>
       ///     To restore an encrypted file call one of the
-      ///     <see cref="O:Alphaleonis.Win32.Filesystem.File.ImportEncryptedFileRaw"/> overloads and specify the file to restore
+      ///     <see cref="O:System.Native.IO.FileSystem.File.ImportEncryptedFileRaw"/> overloads and specify the file to restore
       ///     along with the destination stream of the restored data.
       ///   </para>
       ///   <para>
@@ -233,7 +233,7 @@ namespace Alphaleonis.Win32.Filesystem
       /// <param name="destinationFilePath">The path of the destination file to restore to.</param>
       /// <param name="overwriteHidden">If set to <see langword="true"/> a hidden file will be overwritten on import.</param>
       /// <param name="pathFormat">The path format of the <paramref name="destinationFilePath"/> parameter.</param>
-      /// <seealso cref="O:Alphaleonis.Win32.Filesystem.File.ExportEncryptedFileRaw"/>
+      /// <seealso cref="O:System.Native.IO.FileSystem.File.ExportEncryptedFileRaw"/>
       public static void ImportEncryptedFileRaw(System.IO.Stream inputStream, string destinationFilePath, bool overwriteHidden, PathFormat pathFormat)
       {
          ImportEncryptedFileRawCore(inputStream, destinationFilePath, pathFormat, NativeMethods.EncryptedFileRawMode.CreateForImport | (overwriteHidden ? NativeMethods.EncryptedFileRawMode.OverwriteHidden : 0));         

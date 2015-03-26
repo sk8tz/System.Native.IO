@@ -21,7 +21,7 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-namespace Alphaleonis.Win32.Network
+namespace System.Native.IO.Network
 {
    /// <summary>Contains information about a DFS root or link target in a DFS namespace or from the cache maintained by the DFS client.
    /// <para>This class cannot be inherited.</para>

@@ -22,7 +22,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Alphaleonis.Win32.Network
+namespace System.Native.IO.Network
 {
    /// <summary>Contains information about the shared resource.</summary>
    /// <remarks>

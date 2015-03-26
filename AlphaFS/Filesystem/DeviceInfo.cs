@@ -19,13 +19,13 @@
  *  THE SOFTWARE. 
  */
 
-using Alphaleonis.Win32.Network;
+using System.Native.IO.Network;
 using System;
 using System.Collections.Generic;
 using System.Security;
 using System.Security.Permissions;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Provides access to information of a device, on a local or remote host.</summary>
    [SecurityPermission(SecurityAction.InheritanceDemand, UnmanagedCode = true)]

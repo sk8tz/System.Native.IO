@@ -21,7 +21,7 @@
 
 using System;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>[AlphaFS] Directory enumeration options, flags that specify how a directory is to be enumerated.</summary>
    [Flags]

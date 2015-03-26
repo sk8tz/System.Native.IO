@@ -21,7 +21,7 @@
 
 using System.Runtime.InteropServices;
 
-namespace Alphaleonis.Win32.Network
+namespace System.Native.IO.Network
 {
    internal static partial class NativeMethods
    {
@@ -54,7 +54,7 @@ namespace Alphaleonis.Win32.Network
          /// <summary>If the entry is a network resource, this member is a <see cref="string"/> that specifies the remote network name.
          /// If the entry is a current or persistent connection, <see cref="lpRemoteName"/> member points to 
          /// the network name associated with the name pointed to by the <see cref="lpLocalName"/> member.
-         /// The <see cref="string"/> can be <see cref="Alphaleonis.Win32.Filesystem.NativeMethods.MaxPath"/> characters in length,
+         /// The <see cref="string"/> can be <see cref="System.Native.IO.FileSystem.NativeMethods.MaxPath"/> characters in length,
          /// and it must follow the network provider's naming conventions.
          /// </summary>
          [MarshalAs(UnmanagedType.LPWStr)] public string lpRemoteName;

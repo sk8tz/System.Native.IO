@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-using Alphaleonis.Win32.Filesystem;
+using System.Native.IO.FileSystem;
 using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
@@ -28,7 +28,7 @@ using System.Net.NetworkInformation;
 using System.Security;
 using System.Text;
 
-namespace Alphaleonis.Win32.Network
+namespace System.Native.IO.Network
 {
    partial class Host
    {

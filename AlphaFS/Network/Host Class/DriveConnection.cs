@@ -23,7 +23,7 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Net;
 
-namespace Alphaleonis.Win32.Network
+namespace System.Native.IO.Network
 {
    /// <summary>Used to create a temporary connection to a network resource that will be disconnected once this instance is disposed.</summary>
    public sealed class DriveConnection : IDisposable

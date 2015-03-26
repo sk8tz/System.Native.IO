@@ -19,14 +19,14 @@
  *  THE SOFTWARE. 
  */
 
-using Alphaleonis.Win32.Network;
+using System.Native.IO.Network;
 using System;
 using System.Globalization;
 using System.IO;
 using System.Net.NetworkInformation;
 using System.Security;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    public static partial class Path
    {

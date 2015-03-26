@@ -29,7 +29,7 @@ using System.Runtime.InteropServices;
 using System.Security;
 using System.Text;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Static class providing utility methods for working with Microsoft Windows devices and volumes.</summary>
    public static class Volume
@@ -331,7 +331,7 @@ namespace Alphaleonis.Win32.Filesystem
       /// <param name="drivePath">
       ///   A path to a drive. For example: "C:\", "\\server\share", or "\\?\Volume{c0580d5e-2ad6-11dc-9924-806e6f6e6963}\".
       /// </param>
-      /// <returns>A <see ref="Alphaleonis.Win32.Filesystem.DiskSpaceInfo"/> class instance.</returns>      
+      /// <returns>A <see ref="System.Native.IO.FileSystem.DiskSpaceInfo"/> class instance.</returns>      
       [SecurityCritical]
       public static DiskSpaceInfo GetDiskFreeSpace(string drivePath)
       {
@@ -350,7 +350,7 @@ namespace Alphaleonis.Win32.Filesystem
       ///   <see langword="null"/> gets both size- and disk cluster information. <see langword="true"/> Get only disk cluster information,
       ///   <see langword="false"/> Get only size information.
       /// </param>
-      /// <returns>A <see ref="Alphaleonis.Win32.Filesystem.DiskSpaceInfo"/> class instance.</returns>      
+      /// <returns>A <see ref="System.Native.IO.FileSystem.DiskSpaceInfo"/> class instance.</returns>      
       [SecurityCritical]
       public static DiskSpaceInfo GetDiskFreeSpace(string drivePath, bool? spaceInfoType)
       {

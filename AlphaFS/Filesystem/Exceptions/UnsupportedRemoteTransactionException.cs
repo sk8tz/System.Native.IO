@@ -22,7 +22,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>The remote server or share does not support transacted file operations.</summary>
    [SerializableAttribute]

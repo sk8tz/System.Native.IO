@@ -21,7 +21,7 @@
 
 using System.ComponentModel;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Class for CopyMoveResult that contains the results for the Copy or Move action.</summary>
    public sealed class CopyMoveResult

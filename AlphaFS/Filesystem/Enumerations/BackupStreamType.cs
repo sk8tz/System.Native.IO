@@ -21,7 +21,7 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>The type of the data contained in the backup stream.</summary>
    public enum BackupStreamType

@@ -169,9 +169,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AlphaFS\AlphaFS.csproj">
+    <ProjectReference Include="..\AlphaFS\System.Native.IO.csproj">
       <Project>{F0F9AF1E-D5B5-4D72-804A-5380622FBDEA}</Project>
-      <Name>AlphaFS</Name>
+      <Name>System.Native.IO</Name>
       <Private>False</Private>
     </ProjectReference>
   </ItemGroup>

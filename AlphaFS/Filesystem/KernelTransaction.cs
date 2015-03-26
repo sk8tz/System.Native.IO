@@ -28,7 +28,7 @@ using System.Security.AccessControl;
 using System.Security.Permissions;
 using System.Transactions;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    [ComImport]
    [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
@@ -38,7 +38,7 @@ namespace Alphaleonis.Win32.Filesystem
       void GetHandle([Out] out SafeKernelTransactionHandle handle);
    }
 
-   /// <summary>A KTM transaction object for use with the transacted operations in <see cref="Filesystem"/></summary>
+   /// <summary>A KTM transaction object for use with the transacted operations in <see cref="FileSystem"/></summary>
    public sealed class KernelTransaction : MarshalByRefObject, IDisposable
    {
       /// <summary>Initializes a new instance of the <see cref="KernelTransaction"/> class, internally using the specified <see cref="Transaction"/>.

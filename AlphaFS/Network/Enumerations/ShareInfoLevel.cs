@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-namespace Alphaleonis.Win32.Network
+namespace System.Native.IO.Network
 {
    /// <summary>The <see cref="ShareInfo"/> information level.</summary>
    public enum ShareInfoLevel

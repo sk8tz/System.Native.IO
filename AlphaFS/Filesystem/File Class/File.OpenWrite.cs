@@ -23,7 +23,7 @@ using System.IO;
 using System.Security;
 using FileStream = System.IO.FileStream;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    public static partial class File
    {

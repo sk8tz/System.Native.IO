@@ -24,7 +24,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
-namespace Alphaleonis.Win32.Security
+namespace System.Native.IO.Security
 {
    /// <summary>Used to enable one or more privileges. The privileges specified will be enabled during the lifetime of the instance. Users create an instance of this object in a <c>using</c> statement to ensure that it is properly disposed when the elevated privileges are no longer needed.</summary>
    public sealed class PrivilegeEnabler : IDisposable

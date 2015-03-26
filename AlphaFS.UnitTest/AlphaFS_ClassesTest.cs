@@ -19,22 +19,22 @@
  *  THE SOFTWARE. 
  */
 
-using Alphaleonis.Win32;
-using Alphaleonis.Win32.Filesystem;
-using Alphaleonis.Win32.Network;
+using System.Native.IO;
+using System.Native.IO.FileSystem;
+using System.Native.IO.Network;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Net.NetworkInformation;
-using Directory = Alphaleonis.Win32.Filesystem.Directory;
-using DirectoryInfo = Alphaleonis.Win32.Filesystem.DirectoryInfo;
-using DriveInfo = Alphaleonis.Win32.Filesystem.DriveInfo;
-using File = Alphaleonis.Win32.Filesystem.File;
-using FileInfo = Alphaleonis.Win32.Filesystem.FileInfo;
-using OperatingSystem = Alphaleonis.Win32.OperatingSystem;
-using Path = Alphaleonis.Win32.Filesystem.Path;
+using Directory = System.Native.IO.FileSystem.Directory;
+using DirectoryInfo = System.Native.IO.FileSystem.DirectoryInfo;
+using DriveInfo = System.Native.IO.FileSystem.DriveInfo;
+using File = System.Native.IO.FileSystem.File;
+using FileInfo = System.Native.IO.FileSystem.FileInfo;
+using OperatingSystem = System.Native.IO.OperatingSystem;
+using Path = System.Native.IO.FileSystem.Path;
 
 namespace AlphaFS.UnitTest
 {
@@ -1226,153 +1226,153 @@ namespace AlphaFS.UnitTest
 
       #region Unit Test Callers
 
-      #region Filesystem
+      #region FileSystem
 
-      #region Filesystem_Class_AlternateDataStreamInfo
+      #region FileSystem_Class_AlternateDataStreamInfo
 
       [TestMethod]
-      public void Filesystem_Class_AlternateDataStreamInfo()
+      public void FileSystem_Class_AlternateDataStreamInfo()
       {
-         Console.WriteLine("Class Filesystem.AlternateDataStreamInfo()");
+         Console.WriteLine("Class FileSystem.AlternateDataStreamInfo()");
 
          DumpClassAlternateDataStreamInfo(true);
          DumpClassAlternateDataStreamInfo(false);
       }
 
-      #endregion // Filesystem_Class_AlternateDataStreamInfo
+      #endregion // FileSystem_Class_AlternateDataStreamInfo
 
-      #region Filesystem_Class_BackupFileStream
+      #region FileSystem_Class_BackupFileStream
 
       [TestMethod]
-      public void Filesystem_Class_BackupFileStream()
+      public void FileSystem_Class_BackupFileStream()
       {
-         Console.WriteLine("Class Filesystem.BackupFileStream()");
+         Console.WriteLine("Class FileSystem.BackupFileStream()");
 
          DumpClassBackupFileStream(true);
          DumpClassBackupFileStream(false);
       }
 
-      #endregion // Filesystem_Class_BackupFileStream
+      #endregion // FileSystem_Class_BackupFileStream
 
-      #region Filesystem_Class_ByHandleFileInfo
+      #region FileSystem_Class_ByHandleFileInfo
 
       [TestMethod]
-      public void Filesystem_Class_ByHandleFileInfo()
+      public void FileSystem_Class_ByHandleFileInfo()
       {
-         Console.WriteLine("Class Filesystem.ByHandleFileInfo()");
+         Console.WriteLine("Class FileSystem.ByHandleFileInfo()");
 
          DumpClassByHandleFileInfo(true);
          DumpClassByHandleFileInfo(false);
       }
 
-      #endregion // Filesystem_Class_ByHandleFileInfo
+      #endregion // FileSystem_Class_ByHandleFileInfo
 
-      #region Filesystem_Class_DeviceInfo
+      #region FileSystem_Class_DeviceInfo
 
       [TestMethod]
-      public void Filesystem_Class_DeviceInfo()
+      public void FileSystem_Class_DeviceInfo()
       {
-         Console.WriteLine("Class Filesystem.DeviceInfo()");
+         Console.WriteLine("Class FileSystem.DeviceInfo()");
          Console.WriteLine("\nMSDN Note: Beginning in Windows 8 and Windows Server 2012 functionality to access remote machines has been removed.");
          Console.WriteLine("You cannot access remote machines when running on these versions of Windows.\n");
 
          DumpClassDeviceInfo(UnitTestConstants.LocalHost);
       }
 
-      #endregion // Filesystem_Class_Shell32Info
+      #endregion // FileSystem_Class_Shell32Info
 
-      #region Filesystem_Class_DirectoryInfo
+      #region FileSystem_Class_DirectoryInfo
 
       [TestMethod]
-      public void Filesystem_Class_DirectoryInfo()
+      public void FileSystem_Class_DirectoryInfo()
       {
-         Console.WriteLine("Class Filesystem.DirectoryInfo()");
+         Console.WriteLine("Class FileSystem.DirectoryInfo()");
 
          DumpClassDirectoryInfo(true);
          DumpClassDirectoryInfo(false);
       }
 
-      #endregion // Filesystem_Class_DirectoryInfo
+      #endregion // FileSystem_Class_DirectoryInfo
 
-      #region Filesystem_Class_DiskSpaceInfo
+      #region FileSystem_Class_DiskSpaceInfo
 
       [TestMethod]
-      public void Filesystem_Class_DiskSpaceInfo()
+      public void FileSystem_Class_DiskSpaceInfo()
       {
-         Console.WriteLine("Class Filesystem.DiskSpaceInfo()");
+         Console.WriteLine("Class FileSystem.DiskSpaceInfo()");
 
          DumpClassDiskSpaceInfo(true);
          DumpClassDiskSpaceInfo(false);
       }
 
-      #endregion // Filesystem_Class_DiskSpaceInfo
+      #endregion // FileSystem_Class_DiskSpaceInfo
 
-      #region Filesystem_Class_DriveInfo
+      #region FileSystem_Class_DriveInfo
 
       [TestMethod]
-      public void Filesystem_Class_DriveInfo()
+      public void FileSystem_Class_DriveInfo()
       {
-         Console.WriteLine("Class Filesystem.DriveInfo()");
+         Console.WriteLine("Class FileSystem.DriveInfo()");
 
          DumpClassDriveInfo(true, UnitTestConstants.SysDrive);
          DumpClassDriveInfo(false, UnitTestConstants.SysDrive);
       }
 
-      #endregion // Filesystem_Class_DriveInfo
+      #endregion // FileSystem_Class_DriveInfo
 
-      #region Filesystem_Class_FileInfo
+      #region FileSystem_Class_FileInfo
 
       [TestMethod]
-      public void Filesystem_Class_FileInfo()
+      public void FileSystem_Class_FileInfo()
       {
-         Console.WriteLine("Class Filesystem.FileInfo()");
+         Console.WriteLine("Class FileSystem.FileInfo()");
 
          DumpClassFileInfo(true);
          DumpClassFileInfo(false);
       }
 
-      #endregion // Filesystem_Class_FileInfo
+      #endregion // FileSystem_Class_FileInfo
       
-      #region Filesystem_Class_FileSystemEntryInfo
+      #region FileSystem_Class_FileSystemEntryInfo
 
       [TestMethod]
-      public void Filesystem_Class_FileSystemEntryInfo()
+      public void FileSystem_Class_FileSystemEntryInfo()
       {
-         Console.WriteLine("Class Filesystem.FileSystemEntryInfo()");
+         Console.WriteLine("Class FileSystem.FileSystemEntryInfo()");
 
          DumpClassFileSystemEntryInfo(true);
          DumpClassFileSystemEntryInfo(false);
       }
 
-      #endregion // Filesystem_Class_FileSystemEntryInfo
+      #endregion // FileSystem_Class_FileSystemEntryInfo
 
-      #region Filesystem_Class_Shell32Info
+      #region FileSystem_Class_Shell32Info
 
       [TestMethod]
-      public void Filesystem_Class_Shell32Info()
+      public void FileSystem_Class_Shell32Info()
       {
-         Console.WriteLine("Class Filesystem.Shell32Info()");
+         Console.WriteLine("Class FileSystem.Shell32Info()");
 
          DumpClassShell32Info(true);
          DumpClassShell32Info(false);
       }
 
-      #endregion // Filesystem_Class_Shell32Info
+      #endregion // FileSystem_Class_Shell32Info
 
-      #region Filesystem_Class_VolumeInfo
+      #region FileSystem_Class_VolumeInfo
 
       [TestMethod]
-      public void Filesystem_Class_VolumeInfo()
+      public void FileSystem_Class_VolumeInfo()
       {
-         Console.WriteLine("Class Filesystem.VolumeInfo()");
+         Console.WriteLine("Class FileSystem.VolumeInfo()");
 
          DumpClassVolumeInfo(true);
          DumpClassVolumeInfo(false);
       }
 
-      #endregion // Filesystem_Class_VolumeInfo
+      #endregion // FileSystem_Class_VolumeInfo
 
-      #endregion Filesystem
+      #endregion FileSystem
 
       #region Network
 

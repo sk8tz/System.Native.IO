@@ -22,7 +22,7 @@
 using System;
 using System.Globalization;
 
-namespace Alphaleonis.Win32.Network
+namespace System.Native.IO.Network
 {
    /// <summary>Contains the identification number and other pertinent information about files, devices, and pipes. This class cannot be inherited.</summary>
    [SerializableAttribute]

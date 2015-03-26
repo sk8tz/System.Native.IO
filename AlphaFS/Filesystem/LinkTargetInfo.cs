@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Information about the target of a symbolic link or mount point.</summary>
    public class LinkTargetInfo

@@ -21,7 +21,7 @@
 
 using System;
 
-namespace Alphaleonis.Win32.Security
+namespace System.Native.IO.Security
 {
    /// <summary>The SECURITY_DESCRIPTOR_CONTROL data type is a set of bit flags that qualify the meaning of a security descriptor or its components.
    /// Each security descriptor has a Control member that stores the SECURITY_DESCRIPTOR_CONTROL bits.</summary>

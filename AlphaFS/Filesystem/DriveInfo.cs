@@ -26,7 +26,7 @@ using System.IO;
 using System.Linq;
 using System.Security;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Provides access to information on a local or remote drive.</summary>
    /// <remarks>
@@ -202,7 +202,7 @@ namespace Alphaleonis.Win32.Filesystem
          set { Volume.SetVolumeLabel(Name, value); }
       }
 
-      /// <summary>[AlphaFS] Returns the <see ref="Alphaleonis.Win32.Filesystem.DiskSpaceInfo"/> instance.</summary>
+      /// <summary>[AlphaFS] Returns the <see ref="System.Native.IO.FileSystem.DiskSpaceInfo"/> instance.</summary>
       public DiskSpaceInfo DiskSpaceInfo
       {
          get
@@ -250,7 +250,7 @@ namespace Alphaleonis.Win32.Filesystem
       #region Methods
 
       /// <summary>Retrieves the drive names of all logical drives on a computer.</summary>
-      /// <returns>An array of type <see cref="Alphaleonis.Win32.Filesystem.DriveInfo"/> that represents the logical drives on a computer.</returns>
+      /// <returns>An array of type <see cref="System.Native.IO.FileSystem.DriveInfo"/> that represents the logical drives on a computer.</returns>
       
       [SecurityCritical]
       public static DriveInfo[] GetDrives()
@@ -271,7 +271,7 @@ namespace Alphaleonis.Win32.Filesystem
       /// <param name="fromEnvironment">Retrieve logical drives as known by the Environment.</param>
       /// <param name="isReady">Retrieve only when accessible (IsReady) logical drives.</param>
       /// <returns>
-      ///   An IEnumerable of type <see cref="Alphaleonis.Win32.Filesystem.DriveInfo"/> that represents
+      ///   An IEnumerable of type <see cref="System.Native.IO.FileSystem.DriveInfo"/> that represents
       ///   the logical drives on a computer.
       /// </returns>      
       [SecurityCritical]

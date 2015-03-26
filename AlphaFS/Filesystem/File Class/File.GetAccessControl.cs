@@ -19,14 +19,14 @@
  *  THE SOFTWARE. 
  */
 
-using Alphaleonis.Win32.Security;
+using System.Native.IO.Security;
 using System;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Security;
 using System.Security.AccessControl;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    public static partial class File
    {

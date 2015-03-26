@@ -22,7 +22,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Used by MoveFileXxx.Flags that specify how a file or directory is to be moved.</summary>
    [Flags]

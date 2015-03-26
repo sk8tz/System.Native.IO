@@ -19,9 +19,9 @@
  *  THE SOFTWARE. 
  */
 
-using Alphaleonis;
-using Alphaleonis.Win32;
-using Alphaleonis.Win32.Filesystem;
+using System.Native.IO;
+using System.Native.IO;
+using System.Native.IO.FileSystem;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
@@ -32,12 +32,12 @@ using System.Security.AccessControl;
 using System.Security.Principal;
 using System.Text;
 using System.Threading;
-using Directory = Alphaleonis.Win32.Filesystem.Directory;
-using DirectoryInfo = Alphaleonis.Win32.Filesystem.DirectoryInfo;
-using DriveInfo = Alphaleonis.Win32.Filesystem.DriveInfo;
-using File = Alphaleonis.Win32.Filesystem.File;
-using FileInfo = Alphaleonis.Win32.Filesystem.FileInfo;
-using Path = Alphaleonis.Win32.Filesystem.Path;
+using Directory = System.Native.IO.FileSystem.Directory;
+using DirectoryInfo = System.Native.IO.FileSystem.DirectoryInfo;
+using DriveInfo = System.Native.IO.FileSystem.DriveInfo;
+using File = System.Native.IO.FileSystem.File;
+using FileInfo = System.Native.IO.FileSystem.FileInfo;
+using Path = System.Native.IO.FileSystem.Path;
 
 namespace AlphaFS.UnitTest
 {
@@ -2535,7 +2535,7 @@ namespace AlphaFS.UnitTest
          expectedFileSecurity.AddAccessRule(new FileSystemAccessRule(new SecurityIdentifier(WellKnownSidType.WorldSid, null), FileSystemRights.FullControl, AccessControlType.Allow));
          expectedFileSecurity.AddAuditRule(new FileSystemAuditRule(new SecurityIdentifier(WellKnownSidType.WorldSid, null), FileSystemRights.Read, AuditFlags.Success));
 
-         using (new Alphaleonis.Win32.Security.PrivilegeEnabler(Alphaleonis.Win32.Security.Privilege.Security))
+         using (new System.Native.IO.Security.PrivilegeEnabler(System.Native.IO.Security.Privilege.Security))
          {
             using (FileStream s1 = System.IO.File.Create(pathExpected, 4096, FileOptions.None, expectedFileSecurity))
             using (FileStream s2 = File.Create(pathActual, 4096, FileOptions.None, expectedFileSecurity))

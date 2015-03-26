@@ -24,7 +24,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using System.Security.AccessControl;
 
-namespace Alphaleonis.Win32.Security
+namespace System.Native.IO.Security
 {
    internal static partial class NativeMethods
    {

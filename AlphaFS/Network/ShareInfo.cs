@@ -19,11 +19,11 @@
  *  THE SOFTWARE. 
  */
 
-using Alphaleonis.Win32.Filesystem;
+using System.Native.IO.FileSystem;
 using System;
 using System.Globalization;
 
-namespace Alphaleonis.Win32.Network
+namespace System.Native.IO.Network
 {
    /// <summary>Contains information about Server Message Block (SMB) shares. This class cannot be inherited.</summary>
    [SerializableAttribute]
@@ -89,7 +89,7 @@ namespace Alphaleonis.Win32.Network
          }
 
          
-         NetFullPath = string.Format(CultureInfo.CurrentCulture, "{0}{1}{2}{3}", Filesystem.Path.UncPrefix, ServerName, Filesystem.Path.DirectorySeparatorChar, NetName);
+         NetFullPath = string.Format(CultureInfo.CurrentCulture, "{0}{1}{2}{3}", FileSystem.Path.UncPrefix, ServerName, FileSystem.Path.DirectorySeparatorChar, NetName);
 
          ShareLevel = shareLevel;
       }

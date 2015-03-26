@@ -27,8 +27,8 @@
 // Error List, point to "Suppress Message(s)", and click 
 // "In Project Suppression File". 
 // You do not need to add suppressions to this file manually. 
-[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Alphaleonis", Scope = "namespace", Target = "Alphaleonis.Win32.Network")]
-[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Alphaleonis", Scope = "namespace", Target = "Alphaleonis.Win32.Security")]
-[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "Alphaleonis.Win32.Security")]
-[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Filesystem", Scope = "namespace", Target = "Alphaleonis.Win32.Filesystem")]
-[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Alphaleonis", Scope = "namespace", Target = "Alphaleonis.Win32.Filesystem")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Alphaleonis", Scope = "namespace", Target = "System.Native.IO.Network")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Alphaleonis", Scope = "namespace", Target = "System.Native.IO.Security")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "System.Native.IO.Security")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "FileSystem", Scope = "namespace", Target = "System.Native.IO.FileSystem")]
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Alphaleonis", Scope = "namespace", Target = "System.Native.IO.FileSystem")]

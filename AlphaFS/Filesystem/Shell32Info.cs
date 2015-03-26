@@ -25,7 +25,7 @@ using System.IO;
 using System.Security;
 using System.Text;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Contains Shell32 information about a file.</summary>
    [SerializableAttribute]

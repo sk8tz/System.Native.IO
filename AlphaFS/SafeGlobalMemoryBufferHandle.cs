@@ -23,7 +23,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Alphaleonis.Win32
+namespace System.Native.IO
 {
    /// <summary>Represents a block of native memory of a specified size allocated using the LocalAlloc function from Kernel32.dll.</summary>
    internal sealed class SafeGlobalMemoryBufferHandle : SafeNativeMemoryBufferHandle

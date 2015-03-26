@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Indicates the format of a path passed to a method.</summary>
    /// <remarks>

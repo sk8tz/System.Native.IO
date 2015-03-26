@@ -19,12 +19,12 @@
  *  THE SOFTWARE. 
  */
 
-using Alphaleonis.Win32.Filesystem;
+using System.Native.IO.FileSystem;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Directory = Alphaleonis.Win32.Filesystem.Directory;
-using File = Alphaleonis.Win32.Filesystem.File;
-using Path = Alphaleonis.Win32.Filesystem.Path;
+using Directory = System.Native.IO.FileSystem.Directory;
+using File = System.Native.IO.FileSystem.File;
+using Path = System.Native.IO.FileSystem.Path;
 
 namespace AlphaFS.UnitTest
 {
@@ -99,7 +99,7 @@ namespace AlphaFS.UnitTest
       [TestMethod]
       public void GetFileAssociation()
       {
-         Console.WriteLine("Filesystem.Shell32.GetFileAssociation()");
+         Console.WriteLine("FileSystem.Shell32.GetFileAssociation()");
 
          DumpGetAssociation(true);
          DumpGetAssociation(false);
@@ -112,7 +112,7 @@ namespace AlphaFS.UnitTest
       [TestMethod]
       public void GetFileIcon()
       {
-         Console.WriteLine("Filesystem.Shell32.GetFileIcon()");
+         Console.WriteLine("FileSystem.Shell32.GetFileIcon()");
 
          Console.WriteLine("\nInput File Path: [{0}]\n", UnitTestConstants.NotepadExe);
 
@@ -134,7 +134,7 @@ namespace AlphaFS.UnitTest
       [TestMethod]
       public void PathCreateFromUrl()
       {
-         Console.WriteLine("Filesystem.Shell32.PathCreateFromUrl()");
+         Console.WriteLine("FileSystem.Shell32.PathCreateFromUrl()");
 
          string urlPath = Shell32.UrlCreateFromPath(UnitTestConstants.AppData);
          string filePath = Shell32.PathCreateFromUrl(urlPath);
@@ -159,7 +159,7 @@ namespace AlphaFS.UnitTest
       [TestMethod]
       public void PathCreateFromUrlAlloc()
       {
-         Console.WriteLine("Filesystem.Shell32.PathCreateFromUrlAlloc()");
+         Console.WriteLine("FileSystem.Shell32.PathCreateFromUrlAlloc()");
 
          string urlPath = Shell32.UrlCreateFromPath(UnitTestConstants.AppData);
          string filePath = Shell32.PathCreateFromUrlAlloc(urlPath);
@@ -184,7 +184,7 @@ namespace AlphaFS.UnitTest
       [TestMethod]
       public void PathFileExists()
       {
-         Console.WriteLine("Filesystem.Shell32.PathFileExists()");
+         Console.WriteLine("FileSystem.Shell32.PathFileExists()");
 
          string path = UnitTestConstants.SysRoot;
          DumpPathFileExists(path, true);
@@ -211,7 +211,7 @@ namespace AlphaFS.UnitTest
       [TestMethod]
       public void UrlCreateFromPath()
       {
-         Console.WriteLine("Filesystem.Shell32.UrlCreateFromPath()");
+         Console.WriteLine("FileSystem.Shell32.UrlCreateFromPath()");
 
          PathCreateFromUrl();
          PathCreateFromUrlAlloc();
@@ -224,7 +224,7 @@ namespace AlphaFS.UnitTest
       [TestMethod]
       public void UrlIs()
       {
-         Console.WriteLine("Filesystem.Shell32.UrlIs()");
+         Console.WriteLine("FileSystem.Shell32.UrlIs()");
 
          string urlPath = Shell32.UrlCreateFromPath(UnitTestConstants.AppData);
          string filePath = Shell32.PathCreateFromUrlAlloc(urlPath);

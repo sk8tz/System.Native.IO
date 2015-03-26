@@ -25,7 +25,7 @@ using System.Runtime.InteropServices;
 using System.Security;
 using System.Text;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    #region AlphaFS
 

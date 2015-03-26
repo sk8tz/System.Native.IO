@@ -25,7 +25,7 @@ using System.Globalization;
 using System.Runtime.InteropServices;
 using System.Security;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Retrieves information about the amount of space that is available on a disk volume, which is the total amount of space,
    /// the total amount of free space, and the total amount of free space available to the user that is associated with the calling thread.
@@ -161,7 +161,7 @@ namespace Alphaleonis.Win32.Filesystem
 
       #region Reset
 
-      /// <summary>Initializes all <see ref="Alphaleonis.Win32.Filesystem.DiskSpaceInfo"/> properties to 0.</summary>
+      /// <summary>Initializes all <see ref="System.Native.IO.FileSystem.DiskSpaceInfo"/> properties to 0.</summary>
       private void Reset()
       {
          if (_initGetSpaceInfo)

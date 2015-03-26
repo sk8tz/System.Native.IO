@@ -22,7 +22,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Alphaleonis.Win32.Network
+namespace System.Native.IO.Network
 {
    /// <summary>A set of bit flags that describe the storage state of the DFS root or link target.</summary>
    [SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Dfs")]

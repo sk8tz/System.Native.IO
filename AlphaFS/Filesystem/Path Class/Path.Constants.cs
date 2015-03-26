@@ -22,7 +22,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    public static partial class Path
    {

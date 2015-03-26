@@ -24,7 +24,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Security;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Contains information about files in the specified directory. Used for directory handles.</summary>
    [SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Dir")]

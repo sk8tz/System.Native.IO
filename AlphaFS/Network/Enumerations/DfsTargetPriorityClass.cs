@@ -21,7 +21,7 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-namespace Alphaleonis.Win32.Network
+namespace System.Native.IO.Network
 {
    /// <summary>Defines the set of possible DFS target priority class settings.</summary>
    [SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Dfs")]

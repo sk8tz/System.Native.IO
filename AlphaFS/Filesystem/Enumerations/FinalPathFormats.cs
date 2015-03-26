@@ -21,9 +21,9 @@
 
 using System;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
-   /// <summary>Determines the format to convert a path to using <see cref="Alphaleonis.Win32.Filesystem.Path.GetFinalPathNameByHandle(Microsoft.Win32.SafeHandles.SafeFileHandle)"/></summary>
+   /// <summary>Determines the format to convert a path to using <see cref="System.Native.IO.FileSystem.Path.GetFinalPathNameByHandle(Microsoft.Win32.SafeHandles.SafeFileHandle)"/></summary>
    [Flags]
    public enum FinalPathFormats
    {

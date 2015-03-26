@@ -21,7 +21,7 @@
 
 using System;
 
-namespace Alphaleonis.Win32.Security
+namespace System.Native.IO.Security
 {
    /// <summary>The SECURITY_INFORMATION data type identifies the object-related security information being set or queried.
    /// This security information includes:

@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Exposes static methods for creating, moving, and enumerating through directories and subdirectories.
    ///   <para>This class cannot be inherited.</para>

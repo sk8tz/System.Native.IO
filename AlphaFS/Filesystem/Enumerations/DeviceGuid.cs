@@ -22,7 +22,7 @@
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>System-Defined Device Interface Classes</summary>
    /// <remarks>http://msdn.microsoft.com/en-us/library/windows/hardware/ff541389%28v=vs.85%29.aspx</remarks>

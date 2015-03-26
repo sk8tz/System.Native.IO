@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-using Alphaleonis.Win32.Filesystem;
+using System.Native.IO.FileSystem;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
@@ -30,9 +30,9 @@ using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 using System.Security;
 using System.Text;
-using Path = Alphaleonis.Win32.Filesystem.Path;
+using Path = System.Native.IO.FileSystem.Path;
 
-namespace Alphaleonis.Win32.Network
+namespace System.Native.IO.Network
 {
    /// <summary>Provides static methods to retrieve network resource information from a local- or remote host.</summary>
    public static partial class Host

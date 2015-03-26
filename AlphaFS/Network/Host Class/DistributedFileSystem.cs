@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-using Alphaleonis.Win32.Filesystem;
+using System.Native.IO.FileSystem;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
@@ -28,7 +28,7 @@ using System.Linq;
 using System.Net.NetworkInformation;
 using System.Security;
 
-namespace Alphaleonis.Win32.Network
+namespace System.Native.IO.Network
 {
    partial class Host
    {
@@ -45,7 +45,7 @@ namespace Alphaleonis.Win32.Network
       [SecurityCritical]
       public static IEnumerable<DfsInfo> EnumerateDfsLinks(string dfsName)
       {
-         if (!Filesystem.NativeMethods.IsAtLeastWindowsVista)
+         if (!FileSystem.NativeMethods.IsAtLeastWindowsVista)
             throw new PlatformNotSupportedException(Resources.Requires_Windows_Vista_Or_Higher);
 
          if (Utils.IsNullOrWhiteSpace(dfsName))
@@ -187,7 +187,7 @@ namespace Alphaleonis.Win32.Network
       [SecurityCritical]
       private static IEnumerable<string> EnumerateDfsRootCore(string host, bool continueOnException)
       {
-         if (!Filesystem.NativeMethods.IsAtLeastWindowsVista)
+         if (!FileSystem.NativeMethods.IsAtLeastWindowsVista)
             throw new PlatformNotSupportedException(Resources.Requires_Windows_Vista_Or_Higher);
 
          return EnumerateNetworkObjectCore(new FunctionData(), (NativeMethods.DFS_INFO_300 structure, SafeGlobalMemoryBufferHandle buffer) =>
@@ -221,7 +221,7 @@ namespace Alphaleonis.Win32.Network
       [SecurityCritical]
       private static IEnumerable<string> EnumerateDomainDfsRootCore(string domain, bool continueOnException)
       {
-         if (!Filesystem.NativeMethods.IsAtLeastWindowsVista)
+         if (!FileSystem.NativeMethods.IsAtLeastWindowsVista)
             throw new PlatformNotSupportedException(Resources.Requires_Windows_Vista_Or_Higher);
 
          return EnumerateNetworkObjectCore(new FunctionData(), (NativeMethods.DFS_INFO_200 structure, SafeGlobalMemoryBufferHandle buffer) =>
@@ -266,7 +266,7 @@ namespace Alphaleonis.Win32.Network
       [SecurityCritical]
       private static DfsInfo GetDfsInfoCore(bool getFromClient, string dfsName, string serverName, string shareName)
       {
-         if (!Filesystem.NativeMethods.IsAtLeastWindowsVista)
+         if (!FileSystem.NativeMethods.IsAtLeastWindowsVista)
             throw new PlatformNotSupportedException(Resources.Requires_Windows_Vista_Or_Higher);
 
          if (Utils.IsNullOrWhiteSpace(dfsName))

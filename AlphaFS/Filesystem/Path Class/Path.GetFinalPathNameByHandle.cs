@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-using Alphaleonis.Win32.Security;
+using System.Native.IO.Security;
 using Microsoft.Win32.SafeHandles;
 using System;
 using System.Diagnostics;
@@ -29,7 +29,7 @@ using System.Runtime.InteropServices;
 using System.Security;
 using System.Text;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    public static partial class Path
    {
@@ -69,8 +69,8 @@ namespace Alphaleonis.Win32.Filesystem
       /// </remarks>
       /// <param name="handle">Then handle to a <see cref="SafeFileHandle"/> instance.</param>
       /// <param name="finalPath">The final path, formatted as <see cref="FinalPathFormats"/></param>
-      [SuppressMessage("Microsoft.Usage", "CA1806:DoNotIgnoreMethodResults", MessageId = "Alphaleonis.Win32.Filesystem.NativeMethods.GetMappedFileName(System.IntPtr,Alphaleonis.Win32.SafeGlobalMemoryBufferHandle,System.Text.StringBuilder,System.UInt32)")]
-      [SuppressMessage("Microsoft.Usage", "CA1806:DoNotIgnoreMethodResults", MessageId = "Alphaleonis.Win32.Filesystem.NativeMethods.GetMappedFileName(System.IntPtr,Alphaleonis.Win32.Security.SafeLocalMemoryBufferHandle,System.Text.StringBuilder,System.UInt32)")]
+      [SuppressMessage("Microsoft.Usage", "CA1806:DoNotIgnoreMethodResults", MessageId = "System.Native.IO.FileSystem.NativeMethods.GetMappedFileName(System.IntPtr,System.Native.IO.SafeGlobalMemoryBufferHandle,System.Text.StringBuilder,System.UInt32)")]
+      [SuppressMessage("Microsoft.Usage", "CA1806:DoNotIgnoreMethodResults", MessageId = "System.Native.IO.FileSystem.NativeMethods.GetMappedFileName(System.IntPtr,System.Native.IO.Security.SafeLocalMemoryBufferHandle,System.Text.StringBuilder,System.UInt32)")]
       [SecurityCritical]
       internal static string GetFinalPathNameByHandleCore(SafeFileHandle handle, FinalPathFormats finalPath)
       {

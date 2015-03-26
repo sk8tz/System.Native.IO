@@ -23,7 +23,7 @@ using Microsoft.Win32.SafeHandles;
 using System.IO;
 using System.Security;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    public static partial class File
    {

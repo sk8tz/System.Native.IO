@@ -23,12 +23,12 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.ComponentModel;
 using System.IO;
-using Alphaleonis.Win32;
-using Alphaleonis.Win32.Filesystem;
-using Directory = Alphaleonis.Win32.Filesystem.Directory;
-using File = Alphaleonis.Win32.Filesystem.File;
-using DriveInfo = Alphaleonis.Win32.Filesystem.DriveInfo;
-using Path = Alphaleonis.Win32.Filesystem.Path;
+using System.Native.IO;
+using System.Native.IO.FileSystem;
+using Directory = System.Native.IO.FileSystem.Directory;
+using File = System.Native.IO.FileSystem.File;
+using DriveInfo = System.Native.IO.FileSystem.DriveInfo;
+using Path = System.Native.IO.FileSystem.Path;
 
 namespace AlphaFS.UnitTest
 {

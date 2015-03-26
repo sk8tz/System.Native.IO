@@ -21,7 +21,7 @@
 
 using System.Runtime.InteropServices;
 
-namespace Alphaleonis.Win32.Security
+namespace System.Native.IO.Security
 {
    [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
    internal struct Luid

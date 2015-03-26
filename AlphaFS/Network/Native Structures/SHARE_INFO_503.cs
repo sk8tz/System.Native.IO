@@ -22,7 +22,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Alphaleonis.Win32.Network
+namespace System.Native.IO.Network
 {
    internal static partial class NativeMethods
    {

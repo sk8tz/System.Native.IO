@@ -26,7 +26,7 @@ using System.Security;
 using System.Text;
 using StreamReader = System.IO.StreamReader;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    public static partial class File
    {

@@ -21,9 +21,9 @@
 
 using System;
 using System.Globalization;
-using Alphaleonis.Win32.Filesystem;
+using System.Native.IO.FileSystem;
 
-namespace Alphaleonis.Win32.Network
+namespace System.Native.IO.Network
 {
    /// <summary>Contains the identification number of a connection, number of open files, connection time, number of users on the connection, and the type of connection.</summary>
    [SerializableAttribute]

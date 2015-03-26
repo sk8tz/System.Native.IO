@@ -22,7 +22,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>The function attempted to use a name that is reserved for use by another transaction.</summary>
    [SerializableAttribute]

@@ -25,7 +25,7 @@ using System.Globalization;
 using System.IO;
 using System.Security;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Provides properties and instance methods for the creation, copying, deletion, moving, and opening of files, and aids in the creation of <see cref="FileStream"/> objects. This class cannot be inherited.</summary>
    [SerializableAttribute]
@@ -35,7 +35,7 @@ namespace Alphaleonis.Win32.Filesystem
 
       #region .NET
 
-      /// <summary>Initializes a new instance of the <see cref="Alphaleonis.Win32.Filesystem.FileInfo"/> class, which acts as a wrapper for a file path.</summary>
+      /// <summary>Initializes a new instance of the <see cref="System.Native.IO.FileSystem.FileInfo"/> class, which acts as a wrapper for a file path.</summary>
       /// <param name="fileName">The fully qualified name of the new file, or the relative file name. Do not end the path with the directory separator character.</param>
       /// <remarks>This constructor does not check if a file exists. This constructor is a placeholder for a string that is used to access the file in subsequent operations.</remarks>
       public FileInfo(string fileName) : this(null, fileName, PathFormat.RelativePath)
@@ -48,7 +48,7 @@ namespace Alphaleonis.Win32.Filesystem
 
       #region Non-Transactional
 
-      /// <summary>[AlphaFS] Initializes a new instance of the <see cref="Alphaleonis.Win32.Filesystem.FileInfo"/> class, which acts as a wrapper for a file path.</summary>
+      /// <summary>[AlphaFS] Initializes a new instance of the <see cref="System.Native.IO.FileSystem.FileInfo"/> class, which acts as a wrapper for a file path.</summary>
       /// <param name="fileName">The fully qualified name of the new file, or the relative file name. Do not end the path with the directory separator character.</param>
       /// <param name="pathFormat">Indicates the format of the path parameter(s).</param>
       /// <remarks>This constructor does not check if a file exists. This constructor is a placeholder for a string that is used to access the file in subsequent operations.</remarks>
@@ -60,7 +60,7 @@ namespace Alphaleonis.Win32.Filesystem
 
       #region Transactional
 
-      /// <summary>[AlphaFS] Initializes a new instance of the <see cref="Alphaleonis.Win32.Filesystem.FileInfo"/> class, which acts as a wrapper for a file path.</summary>
+      /// <summary>[AlphaFS] Initializes a new instance of the <see cref="System.Native.IO.FileSystem.FileInfo"/> class, which acts as a wrapper for a file path.</summary>
       /// <param name="transaction">The transaction.</param>
       /// <param name="fileName">The fully qualified name of the new file, or the relative file name. Do not end the path with the directory separator character.</param>
       /// <remarks>This constructor does not check if a file exists. This constructor is a placeholder for a string that is used to access the file in subsequent operations.</remarks>
@@ -68,7 +68,7 @@ namespace Alphaleonis.Win32.Filesystem
       {
       }
 
-      /// <summary>[AlphaFS] Initializes a new instance of the <see cref="Alphaleonis.Win32.Filesystem.FileInfo"/> class, which acts as a wrapper for a file path.</summary>
+      /// <summary>[AlphaFS] Initializes a new instance of the <see cref="System.Native.IO.FileSystem.FileInfo"/> class, which acts as a wrapper for a file path.</summary>
       /// <param name="transaction">The transaction.</param>
       /// <param name="fileName">The fully qualified name of the new file, or the relative file name. Do not end the path with the directory separator character.</param>
       /// <param name="pathFormat">Indicates the format of the path parameter(s).</param>

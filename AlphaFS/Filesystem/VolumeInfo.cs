@@ -26,7 +26,7 @@ using System.Runtime.InteropServices;
 using System.Security;
 using System.Text;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Contains information about a filesystem Volume.</summary>
    [SerializableAttribute]

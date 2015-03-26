@@ -26,7 +26,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    internal static partial class NativeMethods
    {  

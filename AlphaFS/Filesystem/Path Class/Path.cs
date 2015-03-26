@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Performs operations on String instances that contain file or directory path information. These operations are performed in a cross-platform manner.</summary>
    public static partial class Path

@@ -26,7 +26,7 @@ using System.Runtime.InteropServices;
 using System.Security;
 using System.Text;
 
-namespace Alphaleonis.Win32.Security
+namespace System.Native.IO.Security
 {
    /// <summary>Represents a privilege for an access token. The privileges available on the local machine are available as 
    /// static instances from this class. To create a <see cref="Privilege"/> representing a privilege on another system,
@@ -401,7 +401,7 @@ namespace Alphaleonis.Win32.Security
          if (!NativeMethods.LookupPrivilegeValue(_systemName, _name, out luid))
             NativeError.ThrowException(Marshal.GetLastWin32Error());
 
-         return Filesystem.NativeMethods.LuidToLong(luid);
+         return FileSystem.NativeMethods.LuidToLong(luid);
       }
 
       #endregion // LookupLuid

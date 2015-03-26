@@ -22,7 +22,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Flags that specify how a file or directory is to be copied.</summary>
    [Flags]

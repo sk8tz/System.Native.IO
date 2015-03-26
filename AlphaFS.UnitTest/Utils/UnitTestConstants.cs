@@ -27,7 +27,7 @@ using System.Linq;
 using System.Security.AccessControl;
 using System.Security.Principal;
 using System.Text;
-using Alphaleonis.Win32.Filesystem;
+using System.Native.IO.FileSystem;
 using File = System.IO.File;
 
 namespace AlphaFS.UnitTest

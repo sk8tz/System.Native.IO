@@ -25,7 +25,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Security;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Provides the base class for both <see cref="FileInfo"/> and <see cref="DirectoryInfo"/> objects.</summary>
    [SerializableAttribute]
@@ -72,7 +72,7 @@ namespace Alphaleonis.Win32.Filesystem
       /// <returns>A string that represents this instance.</returns>
       public override string ToString()
       {
-         // "Alphaleonis.Win32.Filesystem.FileSystemInfo"
+         // "System.Native.IO.FileSystem.FileSystemInfo"
          return GetType().ToString();
       }
 

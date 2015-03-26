@@ -23,7 +23,7 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Specifies how the operating system should open a file.</summary>   
    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2217:DoNotMarkEnumsWithFlags")]

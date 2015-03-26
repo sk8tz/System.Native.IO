@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-using Alphaleonis.Win32.Filesystem;
+using System.Native.IO.FileSystem;
 using System;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
@@ -28,7 +28,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Security.Policy;
 
-namespace Alphaleonis.Win32
+namespace System.Native.IO
 {
    internal static class NativeError
    {

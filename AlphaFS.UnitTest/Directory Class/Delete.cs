@@ -24,14 +24,14 @@ using System;
 using System.ComponentModel;
 using System.IO;
 using System.Security.AccessControl;
-using Alphaleonis.Win32;
-using Alphaleonis.Win32.Filesystem;
-using Directory = Alphaleonis.Win32.Filesystem.Directory;
-using DirectoryInfo = Alphaleonis.Win32.Filesystem.DirectoryInfo;
-using DriveInfo = Alphaleonis.Win32.Filesystem.DriveInfo;
+using System.Native.IO;
+using System.Native.IO.FileSystem;
+using Directory = System.Native.IO.FileSystem.Directory;
+using DirectoryInfo = System.Native.IO.FileSystem.DirectoryInfo;
+using DriveInfo = System.Native.IO.FileSystem.DriveInfo;
 using File = System.IO.File;
-using OperatingSystem = Alphaleonis.Win32.OperatingSystem;
-using Path = Alphaleonis.Win32.Filesystem.Path;
+using OperatingSystem = System.Native.IO.OperatingSystem;
+using Path = System.Native.IO.FileSystem.Path;
 
 namespace AlphaFS.UnitTest
 {

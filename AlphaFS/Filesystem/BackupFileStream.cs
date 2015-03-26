@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-using Alphaleonis.Win32.Security;
+using System.Native.IO.Security;
 using Microsoft.Win32.SafeHandles;
 using System;
 using System.Diagnostics.CodeAnalysis;
@@ -27,9 +27,9 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Security;
 using System.Security.AccessControl;
-using SecurityNativeMethods = Alphaleonis.Win32.Security.NativeMethods;
+using SecurityNativeMethods = System.Native.IO.Security.NativeMethods;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>The <see cref="BackupFileStream"/> provides access to data associated with a specific file or directory, including security information and alternative data streams, for backup and restore operations.</summary>
    /// <remarks>This class uses the <see href="http://msdn.microsoft.com/en-us/library/aa362509(VS.85).aspx">BackupRead</see>, 

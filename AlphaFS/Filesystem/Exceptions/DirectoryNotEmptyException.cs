@@ -23,7 +23,7 @@ using System;
 using System.Globalization;
 using System.Runtime.Serialization;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>The operation could not be completed because the directory was not empty.</summary>
    [Serializable]

@@ -23,7 +23,7 @@ using Microsoft.Win32.SafeHandles;
 using System;
 using System.Runtime.InteropServices;
 
-namespace Alphaleonis.Win32
+namespace System.Native.IO
 {
    /// <summary>Base class for classes representing a block of unmanaged memory.</summary>
    internal abstract class SafeNativeMemoryBufferHandle : SafeHandleZeroOrMinusOneIsInvalid

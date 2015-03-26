@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Used by CopyFileXxx and MoveFileXxx. The <see cref="CopyMoveProgressRoutine"/> function should return one of the following values.</summary>
    public enum CopyMoveProgressResult 

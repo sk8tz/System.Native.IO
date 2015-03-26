@@ -19,8 +19,8 @@
  *  THE SOFTWARE. 
  */
 
-using Alphaleonis;
-using Alphaleonis.Win32.Filesystem;
+using System.Native.IO;
+using System.Native.IO.FileSystem;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
@@ -75,7 +75,7 @@ namespace AlphaFS.UnitTest
       public void EnumerateDevices()
       {
          Console.WriteLine("Device.EnumerateDevices()");
-         Console.WriteLine("Enumerating all classes defined in enum: Filesystem.DeviceGuid");
+         Console.WriteLine("Enumerating all classes defined in enum: FileSystem.DeviceGuid");
 
          Console.WriteLine("\nMSDN Note: Beginning in Windows 8 and Windows Server 2012 functionality to access remote machines has been removed.");
          Console.WriteLine("You cannot access remote machines when running on these versions of Windows.\n");

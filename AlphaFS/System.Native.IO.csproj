@@ -7,8 +7,8 @@
     <ProjectGuid>{F0F9AF1E-D5B5-4D72-804A-5380622FBDEA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Alphaleonis.Win32</RootNamespace>
-    <AssemblyName>AlphaFS</AssemblyName>
+    <RootNamespace>System.Native.IO</RootNamespace>
+    <AssemblyName>System.Native.IO</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\AlphaFS.snk</AssemblyOriginatorKeyFile>
@@ -24,7 +24,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <RunCodeAnalysis>true</RunCodeAnalysis>
-    <DocumentationFile>..\Bin\Debug\Net35\AlphaFS.XML</DocumentationFile>
+    <DocumentationFile>..\Bin\Debug\Net35\System.Native.IO.xml</DocumentationFile>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <RegisterForComInterop>false</RegisterForComInterop>
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
@@ -43,7 +43,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <RunCodeAnalysis>true</RunCodeAnalysis>
-    <DocumentationFile>..\Bin\Debug\Net40\AlphaFS.XML</DocumentationFile>
+    <DocumentationFile>..\Bin\Debug\Net40\System.Native.IO.xml</DocumentationFile>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <RegisterForComInterop>false</RegisterForComInterop>
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
@@ -63,7 +63,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <RunCodeAnalysis>true</RunCodeAnalysis>
-    <DocumentationFile>..\Bin\Debug\Net45\AlphaFS.XML</DocumentationFile>
+    <DocumentationFile>..\Bin\Debug\Net45\System.Native.IO.xml</DocumentationFile>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <RegisterForComInterop>false</RegisterForComInterop>
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
@@ -82,7 +82,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <RunCodeAnalysis>true</RunCodeAnalysis>
-    <DocumentationFile>..\Bin\Debug\Net451\AlphaFS.XML</DocumentationFile>
+    <DocumentationFile>..\Bin\Debug\Net451\System.Native.IO.xml</DocumentationFile>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <RegisterForComInterop>false</RegisterForComInterop>
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
@@ -101,7 +101,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <RunCodeAnalysis>true</RunCodeAnalysis>
-    <DocumentationFile>..\Bin\Debug\Net452\AlphaFS.XML</DocumentationFile>
+    <DocumentationFile>..\Bin\Debug\Net452\System.Native.IO.xml</DocumentationFile>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <RegisterForComInterop>false</RegisterForComInterop>
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
@@ -118,7 +118,7 @@
     <DefineConstants>TRACE;NET35</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\Bin\Release\Net35\AlphaFS.XML</DocumentationFile>
+    <DocumentationFile>..\Bin\Release\Net35\System.Native.IO.xml</DocumentationFile>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <Prefer32Bit>false</Prefer32Bit>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -133,7 +133,7 @@
     <DefineConstants>TRACE;NET40</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\Bin\Release\Net40\AlphaFS.XML</DocumentationFile>
+    <DocumentationFile>..\Bin\Release\Net40\System.Native.IO.xml</DocumentationFile>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <Prefer32Bit>false</Prefer32Bit>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -149,7 +149,7 @@
     <DefineConstants>TRACE;NET45</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\Bin\Release\Net45\AlphaFS.XML</DocumentationFile>
+    <DocumentationFile>..\Bin\Release\Net45\System.Native.IO.xml</DocumentationFile>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <Prefer32Bit>false</Prefer32Bit>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -164,7 +164,7 @@
     <DefineConstants>TRACE;NET451</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\Bin\Release\Net451\AlphaFS.XML</DocumentationFile>
+    <DocumentationFile>..\Bin\Release\Net451\System.Native.IO.xml</DocumentationFile>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <Prefer32Bit>false</Prefer32Bit>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
@@ -179,7 +179,7 @@
     <DefineConstants>TRACE;NET452</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\Bin\Release\Net452\AlphaFS.XML</DocumentationFile>
+    <DocumentationFile>..\Bin\Release\Net452\System.Native.IO.xml</DocumentationFile>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <Prefer32Bit>false</Prefer32Bit>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -513,7 +513,7 @@
   -->
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties StartDate="20080813" AssemblyFileVersion="0" AssemblyVersion="0" Reset="1" />
+      <UserProperties Reset="1" AssemblyVersion="0" AssemblyFileVersion="0" StartDate="20080813" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

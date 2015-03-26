@@ -22,7 +22,7 @@
 using System.IO;
 using System.Security;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    partial class DirectoryInfo
    {

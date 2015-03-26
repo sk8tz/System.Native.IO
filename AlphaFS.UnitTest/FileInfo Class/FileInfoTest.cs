@@ -22,8 +22,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.IO;
-using FileInfo = Alphaleonis.Win32.Filesystem.FileInfo;
-using Path = Alphaleonis.Win32.Filesystem.Path;
+using FileInfo = System.Native.IO.FileSystem.FileInfo;
+using Path = System.Native.IO.FileSystem.Path;
 
 namespace AlphaFS.UnitTest
 {

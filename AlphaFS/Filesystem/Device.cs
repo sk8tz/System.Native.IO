@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-using Alphaleonis.Win32.Network;
+using System.Native.IO.Network;
 using Microsoft.Win32.SafeHandles;
 using System;
 using System.Collections.Generic;
@@ -30,7 +30,7 @@ using System.Security;
 using System.Security.AccessControl;
 using System.Text;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Provides static methods to retrieve device resource information from a local or remote host.</summary>
    public static class Device

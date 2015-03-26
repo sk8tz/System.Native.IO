@@ -25,7 +25,7 @@ using System.Runtime.InteropServices;
 using System.Security;
 using System.Security.Principal;
 
-namespace Alphaleonis.Win32.Security
+namespace System.Native.IO.Security
 {
    /// <summary>
    /// This object is used to enable a specific privilege for the currently running process during its lifetime. 
@@ -77,7 +77,7 @@ namespace Alphaleonis.Win32.Security
                TokenPrivileges newPrivilege = new TokenPrivileges();
                TokenPrivileges mOldPrivilege = new TokenPrivileges();
                newPrivilege.PrivilegeCount = 1;
-               newPrivilege.Luid = Filesystem.NativeMethods.LongToLuid(_mPrivilege.LookupLuid());
+               newPrivilege.Luid = FileSystem.NativeMethods.LongToLuid(_mPrivilege.LookupLuid());
                newPrivilege.Attributes = (uint)(enable ? 2 : 0);    // 2 = SePrivilegeEnabled;
 
                uint length;

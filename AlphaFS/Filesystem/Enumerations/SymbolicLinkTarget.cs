@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Indicates whether the link target is a file or directory.</summary>
    /// <remarks>Used by Win32 API CreateSymbolicLink()/CreateSymbolicLinkTransacted()</remarks>

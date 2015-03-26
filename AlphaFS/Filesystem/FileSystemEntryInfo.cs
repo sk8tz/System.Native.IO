@@ -24,7 +24,7 @@ using System.Globalization;
 using System.IO;
 using System.Security;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Represents information about a file system entry.
    /// <para>This class cannot be inherited.</para>

@@ -23,7 +23,7 @@ using System;
 using System.Security.AccessControl;
 using System.Security.Principal;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    partial class Directory
    {

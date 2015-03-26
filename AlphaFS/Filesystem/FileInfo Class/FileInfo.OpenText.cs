@@ -24,7 +24,7 @@ using System.IO;
 using System.Security;
 using System.Text;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    partial class FileInfo
    {

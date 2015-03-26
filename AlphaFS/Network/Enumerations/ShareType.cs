@@ -22,7 +22,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Alphaleonis.Win32.Network
+namespace System.Native.IO.Network
 {
    /// <summary>The type of the shared resource.</summary>
    /// <remarks>MSDN: 2.2.2.4 Share Types

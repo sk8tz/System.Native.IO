@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-using Alphaleonis.Win32.Filesystem;
+using System.Native.IO.FileSystem;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AlphaFS.UnitTest

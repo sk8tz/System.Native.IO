@@ -22,11 +22,11 @@
 using System;
 using System.Text;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
 
    /// <summary>Information about an alternate data stream.</summary>  
-   /// <seealso cref="O:Alphaleonis.Win32.Filesystem.File.EnumerateAlternateDataStreams"/> 
+   /// <seealso cref="O:System.Native.IO.FileSystem.File.EnumerateAlternateDataStreams"/> 
    public struct AlternateDataStreamInfo
    {
       #region Private Fields
@@ -66,7 +66,7 @@ namespace Alphaleonis.Win32.Filesystem
 
       /// <summary>Gets the full path to the stream.</summary>
       /// <remarks>
-      ///   This is a path in long path format that can be passed to <see cref="O:Alphaleonis.Win32.Filesystem.File.Open"/> to open the stream if
+      ///   This is a path in long path format that can be passed to <see cref="O:System.Native.IO.FileSystem.File.Open"/> to open the stream if
       ///   <see cref="PathFormat.FullPath"/> or
       ///   <see cref="PathFormat.LongFullPath"/> is specified.
       /// </remarks>

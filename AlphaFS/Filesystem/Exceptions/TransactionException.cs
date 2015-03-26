@@ -22,7 +22,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>The exception that is thrown when an attempt to create a file or directory that already exists was made.</summary>
    [SerializableAttribute]

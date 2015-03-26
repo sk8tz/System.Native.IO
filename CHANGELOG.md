@@ -68,9 +68,9 @@ Version 2.0
 * New: Added support for NuGet.
 * New: Added support for building against .NET 4.0, 4.5, and 4.5.1 in addition to 3.5.
 * New: Supports networking by enumerating hosts and shares (SMB/DFS) and connect/disconnect to/from network resources (AlphaFS.Network.Host() class).
-* New: Supports working with NTFS ADS (Alternate Data Streams) on files and folders (AlphaFS.Filesystem.AlternateDataStreamInfo() class).
-* New: Supports enumerating connected PnP devices (AlphaFS.Filesystem.Device() / AlphaFS.Filesystem.DeviceInfo() classes).
-* New: Supports extracting icons from files and folders (AlphaFS.Filesystem.Shell32Info() class).
+* New: Supports working with NTFS ADS (Alternate Data Streams) on files and folders (AlphaFS.FileSystem.AlternateDataStreamInfo() class).
+* New: Supports enumerating connected PnP devices (AlphaFS.FileSystem.Device() / AlphaFS.FileSystem.DeviceInfo() classes).
+* New: Supports extracting icons from files and folders (AlphaFS.FileSystem.Shell32Info() class).
 * New: Supports PathFormat parameter for numerous methods to control path normalization. This speeds up things internally (less string processing and GetFullPath() calls) and also enables working with files and folders with a trailing dot or space:
 	* `RelativePath` (slow): (default) Path will be checked and resolved to an absolute path. Unicode prefix is applied.
 	* `FullPath`  (fast): Path is an absolute path. Unicode prefix is applied.

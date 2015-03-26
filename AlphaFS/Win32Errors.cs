@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-namespace Alphaleonis.Win32
+namespace System.Native.IO
 {
    internal static class Win32Errors
    {

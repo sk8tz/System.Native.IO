@@ -27,7 +27,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace Alphaleonis
+namespace System.Native.IO
 {
    internal static class Utils
    {
@@ -56,7 +56,7 @@ namespace Alphaleonis
 
       /// <summary>Gets an attribute on an enum field value.</summary>
       /// <returns>The description belonging to the enum option, as a string</returns>
-      /// <param name="enumValue">One of the <see cref="Alphaleonis.Win32.Filesystem.DeviceGuid"/> enum types.</param>
+      /// <param name="enumValue">One of the <see cref="System.Native.IO.FileSystem.DeviceGuid"/> enum types.</param>
       [SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
       public static string GetEnumDescription(Enum enumValue)
       {

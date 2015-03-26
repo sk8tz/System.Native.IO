@@ -19,7 +19,7 @@
  *  THE SOFTWARE. 
  */
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Represents information about a symbolic link.</summary>
    public class SymbolicLinkTargetInfo : LinkTargetInfo

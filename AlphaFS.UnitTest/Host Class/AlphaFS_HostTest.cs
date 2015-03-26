@@ -20,14 +20,14 @@
  */
 
 using System.Net.NetworkInformation;
-using Alphaleonis.Win32.Filesystem;
-using Alphaleonis.Win32.Network;
+using System.Native.IO.FileSystem;
+using System.Native.IO.Network;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Globalization;
 using System.Linq;
-using NativeMethods = Alphaleonis.Win32.Network.NativeMethods;
-using Path = Alphaleonis.Win32.Filesystem.Path;
+using NativeMethods = System.Native.IO.Network.NativeMethods;
+using Path = System.Native.IO.FileSystem.Path;
 
 namespace AlphaFS.UnitTest
 {

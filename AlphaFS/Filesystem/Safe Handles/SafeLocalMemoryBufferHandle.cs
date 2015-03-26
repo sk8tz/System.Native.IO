@@ -23,7 +23,7 @@ using System;
 using System.Runtime.InteropServices;
 using Microsoft.Win32.SafeHandles;
 
-namespace Alphaleonis.Win32.Security
+namespace System.Native.IO.Security
 {
    /// <summary>An IntPtr wrapper which can be used as the result of a Marshal.AllocHGlobal operation.
    /// <para>Calls Marshal.FreeHGlobal when disposed or finalized.</para>

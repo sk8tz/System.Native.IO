@@ -24,7 +24,7 @@ using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 
-namespace Alphaleonis.Win32
+namespace System.Native.IO
 {
    /// <summary>Static class providing access to information about the operating system under which the assembly is executing.</summary>
    public static class OperatingSystem

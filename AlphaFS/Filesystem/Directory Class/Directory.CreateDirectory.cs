@@ -28,7 +28,7 @@ using System.Runtime.InteropServices;
 using System.Security;
 using System.Security.AccessControl;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    partial class Directory
    {

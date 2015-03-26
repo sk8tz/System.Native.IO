@@ -22,7 +22,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>The transaction handle associated with this operation is not valid.</summary>
    [SerializableAttribute]

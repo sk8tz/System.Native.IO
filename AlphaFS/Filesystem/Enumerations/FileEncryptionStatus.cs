@@ -21,7 +21,7 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Represents the encryption status of the specified file.</summary>
    public enum FileEncryptionStatus
@@ -46,8 +46,8 @@ namespace Alphaleonis.Win32.Filesystem
       Unknown = 5,
 
       /// <summary>The file system does not support file encryption.</summary>
-      [SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Filesystem")]
-      NoFilesystemSupport = 6,
+      [SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "FileSystem")]
+      NoFileSystemSupport = 6,
 
       /// <summary>Reserved for future use.</summary>
       UserDisallowed = 7,

@@ -21,7 +21,7 @@
 
 using System;
 
-namespace Alphaleonis.Win32.Network
+namespace System.Native.IO.Network
 {
    /// <summary>A set of bit flags that describe the permissions for the shared resource's on servers running with share-level security.</summary>
    /// <remarks>Note that Windows does not support share-level security. This member is ignored on a server running user-level security.</remarks>

@@ -24,7 +24,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    partial class Directory
    {
@@ -52,7 +52,7 @@ namespace Alphaleonis.Win32.Filesystem
 
 
       /// <summary>[AlphaFS] Enumerates the drive names of all logical drives on a computer.</summary>
-      /// <returns>An IEnumerable of type <see cref="Alphaleonis.Win32.Filesystem.DriveInfo"/> that represents the logical drives on a computer.</returns>
+      /// <returns>An IEnumerable of type <see cref="System.Native.IO.FileSystem.DriveInfo"/> that represents the logical drives on a computer.</returns>
       /// <param name="fromEnvironment">Retrieve logical drives as known by the Environment.</param>
       /// <param name="isReady">Retrieve only when accessible (IsReady) logical drives.</param>
       [SecurityCritical]
@@ -64,7 +64,7 @@ namespace Alphaleonis.Win32.Filesystem
       #region Internal Methods
 
       /// <summary>Enumerates the drive names of all logical drives on a computer.</summary>
-      /// <returns>An IEnumerable of type <see cref="Alphaleonis.Win32.Filesystem.DriveInfo"/> that represents the logical drives on a computer.</returns>
+      /// <returns>An IEnumerable of type <see cref="System.Native.IO.FileSystem.DriveInfo"/> that represents the logical drives on a computer.</returns>
       /// <param name="fromEnvironment">Retrieve logical drives as known by the Environment.</param>
       /// <param name="isReady">Retrieve only when accessible (IsReady) logical drives.</param>
       [SecurityCritical]

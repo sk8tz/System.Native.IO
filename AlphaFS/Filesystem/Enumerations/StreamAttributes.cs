@@ -21,7 +21,7 @@
 
 using System;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>WIN32_STREAM_ID Attributes of data to facilitate cross-operating system transfer.</summary>
    [Flags]

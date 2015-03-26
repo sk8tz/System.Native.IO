@@ -21,7 +21,7 @@
 
 using System;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>A bitfield of flags for specifying options for various internal operations that convert paths to full paths.</summary>
    [Flags]

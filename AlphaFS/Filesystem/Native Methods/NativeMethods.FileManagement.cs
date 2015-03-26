@@ -18,7 +18,7 @@
  *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
  *  THE SOFTWARE. 
  */
-using Alphaleonis.Win32.Security;
+using System.Native.IO.Security;
 using Microsoft.Win32.SafeHandles;
 using System;
 using System.Diagnostics.CodeAnalysis;
@@ -27,7 +27,7 @@ using System.Runtime.InteropServices;
 using System.Security.AccessControl;
 using System.Text;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    internal static partial class NativeMethods
    {

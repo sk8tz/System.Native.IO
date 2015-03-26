@@ -19,19 +19,19 @@
  *  THE SOFTWARE. 
  */
 
-using Alphaleonis;
-using Alphaleonis.Win32.Filesystem;
+using System.Native.IO;
+using System.Native.IO.FileSystem;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.Win32.SafeHandles;
 using System;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using Directory = Alphaleonis.Win32.Filesystem.Directory;
-using DriveInfo = Alphaleonis.Win32.Filesystem.DriveInfo;
-using File = Alphaleonis.Win32.Filesystem.File;
-using NativeMethods = Alphaleonis.Win32.Filesystem.NativeMethods;
-using Path = Alphaleonis.Win32.Filesystem.Path;
+using Directory = System.Native.IO.FileSystem.Directory;
+using DriveInfo = System.Native.IO.FileSystem.DriveInfo;
+using File = System.Native.IO.FileSystem.File;
+using NativeMethods = System.Native.IO.FileSystem.NativeMethods;
+using Path = System.Native.IO.FileSystem.Path;
 
 namespace AlphaFS.UnitTest
 {

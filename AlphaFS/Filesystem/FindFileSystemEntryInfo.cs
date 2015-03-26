@@ -27,7 +27,7 @@ using System.Runtime.InteropServices;
 using System.Security;
 using System.Text.RegularExpressions;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Class that retrieves file system entries (i.e. files and directories) using Win32 API FindFirst()/FindNext().</summary>
    [SerializableAttribute]

@@ -24,7 +24,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Net;
 
-namespace Alphaleonis.Win32.Network
+namespace System.Native.IO.Network
 {
    internal static partial class NativeMethods
    {

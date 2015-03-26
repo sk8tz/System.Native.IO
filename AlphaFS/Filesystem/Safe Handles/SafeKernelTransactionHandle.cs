@@ -22,7 +22,7 @@
 using Microsoft.Win32.SafeHandles;
 using System.Security;
 
-namespace Alphaleonis.Win32.Filesystem
+namespace System.Native.IO.FileSystem
 {
    /// <summary>Provides a concrete implementation of SafeHandle supporting transactions.</summary>
    internal class SafeKernelTransactionHandle : SafeHandleMinusOneIsInvalid
